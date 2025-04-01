@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Naruto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="nextpage" href="login.html">
+    <style>
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            background-color: #FF6F61;
+        }
+        .home{
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            padding-right: 80em ;
+        }
+        .container1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10em;
+            padding-left: 23em;
+            padding-top: 3em;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10em;
+            padding-left: 23em;
+            padding-top: 3em;
+        }
+        .container3{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10em;
+            padding-left: 23em;
+            padding-top: 3em;
+        }
+        .fotter{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #E6C49F;
+            padding: 1.5em;
+            margin-top: 3em;
+        }
+        .alinharcard{
+            text-align: center;
+
+        }
+        .alinhardesc{
+            text-align: justify;
+        }
+        .bemvindo{
+            background-color: bisque;
+            text-align: justify;
+            display: flex;
+            flex-direction: row;
+            padding-left: 6em;
+            padding-right: 6em;
+            margin-left: 22em;
+            margin-right: 21em;
+        }
+        .btn.btn-secondary.dropdown-toggle{ /* Parte do usuário */
+            background: none;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-align: center;
+        }
+        .btn.btn-secondary.dropdown-toggle:focus{ /* Parte do usuário */
+            background: none;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-align: center;
+        }
+        
+        .carrinho{
+            text-align: center;
+            justify-content: center;
+            padding-top: 0.5em;
+        }
+    </style>
+</head>
+<body style="background-image: url(img/restaurante.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;">
+
+    <header class="header"> <!--Header esquerda-->
+        <section class="home"> <!--Header usuário-->
+            <div style="padding-top: 0.5em;"><img src="img/home-icon-vector.jpg" alt="home" style="max-width: 100%; height: 90px;"></div>
+            <div style="padding-top: 1em;font-size: 30px;"><strong>Ichiraku's Ramem</strong></div>
+        </section>
+            <div> <!--Usuário-->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/usuario.jpg" alt="usuário" style="max-width: 100%; height: 90px;">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="login.html">Login</a>
+                      <a class="dropdown-item" href="#">Sobre nós</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="carrinho"> <!--Carrinho-->
+                <a href="carrinho.html" role="button"><img src="img/carrinho.jpeg" alt="carrinho" style="max-width: 100%; height: 90px;"></a>
+            </div>
+    </header>
+    
+    <div class="alinharcard">
+    <main class="container1" > <!--Conteúdo Row 1-->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Miso Ramen</h5>
+                <img class="card-img-top" src="img/misoramen.jpeg" alt="Imagem do miso ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Um caldo rico e saboroso feito com pasta de miso, oferecendo um equilíbrio perfeito entre umami e cremosidade.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$ 40,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Shoyu Ramen</h5>
+                <img class="card-img-top" src="img/shoyuramen.jpeg" alt="Imagem de shoyu ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Clássico e equilibrado, este ramen tem um caldo à base de molho de soja, proporcionando um sabor levemente salgado e profundo.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$35,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Tonkotsu Ramen</h5>
+                <img class="card-img-top" src="img/tonkotsuramen.jpg" alt="Imagem de tonkotsu ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Um caldo espesso e encorpado feito a partir de ossos de porco cozidos por horas, resultando em um sabor intenso e cremoso.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$50,00</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="alinharcard">
+        <main class="container2"> <!--Conteúdo Row 2-->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Shio Ramen</h5>
+                <img class="card-img-top" src="img/shioramen.jpeg" alt="Imagem de shio ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc"> Uma versão mais leve e delicada, com um caldo à base de sal marinho que realça o sabor natural dos ingredientes.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$35,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Chashu Ramen</h5>
+                <img class="card-img-top" src="img/chashuramen.jpeg" alt="Imagem de chashu ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Um ramen especial servido com generosas fatias de chashu (porco assado), trazendo um sabor defumado e suculento ao prato.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$50,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Nagi Ramen</h5>
+                <img class="card-img-top" src="img/nagiramen.jpg" alt="Imagem de nagi ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Uma variação exclusiva com ingredientes selecionados e um toque especial da casa, garantindo um sabor único.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$60,00</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="alinharcard">
+        <main class="container3"> <!--Conteúdo Row 3-->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Naruto Ramen</h5>
+                <img class="card-img-top" src="img/narutoramen.jpg" alt="Imagem de naruto ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">O favorito do Naruto, este ramen leva ingredientes extras como fatias de narutomaki, ovo cozido e um caldo bem temperado.</div>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$40,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Butter Corn Ramen</h5>
+                <img class="card-img-top" src="img/buttercornramen.jpeg" alt="Imagem de butter corn ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Uma combinação irresistível de milho doce e manteiga derretida em um caldo quente e aromático.</div>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$40,00</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                <h5 class="card-title">Spicy Ramen</h5>
+                <img class="card-img-top" src="img/spicyramen.jpg" alt="Imagem de spicy ramen" style="max-width: 100%; height: 200px;">
+                <br>
+                <br>
+                <div class="alinhardesc">Para os amantes de pimenta, este ramen traz um toque apimentado e picante que esquenta o paladar.</div>
+                <br>
+                <br>
+                <a href="#" class="btn btn-primary">Comprar por R$45,00</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <br>
+    <section> <!--Bem vindo-->
+        <div class="bemvindo">
+            Aqui no Ichiraku Ramen, trazemos para você o sabor autêntico e acolhedor do ramen japonês, com receitas tradicionais e ingredientes frescos que vão aquecer seu coração. Venha experimentar uma experiência gastronômica única, inspirada na famosa Vila de Konoha.
+            Venha saborear nossos pratos deliciosos, como o Miso Ramen, Shoyu Ramen e outras opções irresistíveis, feitas com muito carinho para você! Se você é fã de comida japonesa ou está procurando uma refeição aconchegante, estamos prontos para servir você com o melhor ramen da cidade. 🍲
+            Visite-nos e descubra o sabor que vai te transportar diretamente para o Japão!
+        </div>
+        
+    </section> <!--Fotter-->
+    <footer class="fotter">
+        <div><strong>Sobre nós</strong></div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
