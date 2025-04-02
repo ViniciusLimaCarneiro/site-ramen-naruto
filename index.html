@@ -10,15 +10,16 @@
         .header{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             background-color: #FF6F61;
+            flex-wrap: wrap;
         }
         .home{
             display: flex;
             flex-direction: row;
             gap: 2em;
-            padding-right: 80em;
             flex-wrap: wrap;
+
         }
         .container1{
             display: flex;
@@ -90,9 +91,11 @@
         }
         
         .carrinho{
+            display: flex;
             text-align: center;
             justify-content: center;
             padding-top: 0.5em;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -107,8 +110,8 @@
             <div style="padding-top: 0.5em;"><img src="img/home-icon-vector.jpg" alt="home" style="max-width: 100%; height: 90px;"></div>
             <div style="padding-top: 1em;font-size: 30px;"><strong>Ichiraku's Ramem</strong></div>
         </section>
-            <div> <!--Usuário-->
-                <div class="dropdown">
+            <div class="home"> <!--Usuário-->
+                <div class="dropdown" style="flex-wrap: wrap; display: flex;">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <img src="img/usuario.jpg" alt="usuário" style="max-width: 100%; height: 90px;">
                     </button>
