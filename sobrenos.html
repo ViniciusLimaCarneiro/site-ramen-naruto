@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #FF6F61;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+        }
+        .home{
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            flex-wrap: wrap;
+
+        }
+        .btn.btn-secondary.dropdown-toggle{ /* Parte do usuário */
+            background: none;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-align: center;
+        }
+        .btn.btn-secondary.dropdown-toggle:focus{ /* Parte do usuário */
+            background: none;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            text-align: center;
+        }
+        .carrinho{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding-top: 0.5em;
+            flex-wrap: wrap;
+        }
+        .sobrenos{
+            font-size: 3em;
+            font-weight: bolder;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #E6C49F;
+           
+        }
+        .ichiraku{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            background-color: #E6C49F;
+            padding: 1%;
+        }
+        .texto{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-left: 30%;
+            padding-right: 30%;
+            text-align: justify;
+            padding-top: 3%;
+        }
+        .footer{
+            background-color: #E6C49F;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2.5%;
+            padding: 1.5%;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header"> <!--Header esquerda-->
+        <section class="home"> <!--Header usuário-->
+            <a href="index.html"><img src="img/home-icon-vector.jpg" alt="home" style="max-width: 100%; height: 90px;padding-top: 0.5em;"></a>
+            <div style="padding-top: 1em;font-size: 30px;"><strong>Ichiraku's Ramem</strong></div>
+        </section>
+            <div class="home"> <!--Usuário-->
+                <div class="dropdown" style="flex-wrap: wrap; display: flex;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/usuario.jpg" alt="usuário" style="max-width: 100%; height: 90px;">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="login.html">Login</a>
+                      <a class="dropdown-item" href="sobrenos.html">Sobre nós</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="carrinho"> <!--Carrinho-->
+                <a href="carrinho.html" role="button"><img src="img/carrinho.jpeg" alt="carrinho" style="max-width: 100%; height: 90px;"></a>
+            </div>
+    </header>
+
+    <div class="sobrenos">
+        <div>Sobre nós</div>
+    </div>
+        <div class="ichiraku"><img src="img/ichiraku.jpeg" alt="foto de ichiraku" style="max-width: 100%;height: auto;width: 360px;"></div>
+    <main class="texto">
+        <div>Bem-vindo ao Ichiraku Ramen – onde cada tigela conta uma história!
+            Inspirado no lendário restaurante do mundo ninja, o Ichiraku traz para o mundo real o sabor autêntico do ramen japonês com um toque de magia e nostalgia. Fundado por amantes da cultura oriental e fãs do universo de Naruto, nosso restaurante é mais do que um lugar para comer – é uma experiência para quem valoriza sabor, tradição e boas memórias.
+            No Ichiraku, acreditamos que uma boa refeição pode aquecer o coração. Por isso, preparamos cada prato com ingredientes frescos, caldos ricos e massas artesanais, servindo ramens que conquistam tanto iniciantes quanto verdadeiros ninjas da culinária!
+            Seja para uma refeição rápida, um encontro com amigos ou simplesmente para matar a saudade do seu anime favorito, o Ichiraku é o seu ponto de encontro.
+            Venha nos visitar e descubra por que até o Naruto não resiste a uma tigela de Ichiraku Ramen!</div>
+    </main>
+    <footer class="footer">
+        <div>Ichiraku's ramen</div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
